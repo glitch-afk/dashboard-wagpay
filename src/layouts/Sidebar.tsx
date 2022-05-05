@@ -77,7 +77,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
         }`}
       >
         {/* Sidebar header */}
-        <div className="mb-10  justify-between pr-3 sm:px-2">
+        <div className="mb-10 flex justify-between pr-3 sm:px-2">
           {/* Close button */}
           <button
             ref={trigger}
