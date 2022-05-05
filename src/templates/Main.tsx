@@ -1,8 +1,7 @@
 import { ReactNode, useState } from 'react';
 
 import Header from '@/components/header';
-
-import Sidebar from '../layouts/Sidebar';
+import Sidebar from '@/layouts/Sidebar';
 
 type IMainProps = {
   meta: ReactNode;
@@ -11,6 +10,7 @@ type IMainProps = {
 
 const Main = (props: IMainProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <div className="flex h-screen overflow-hidden">
       {props.meta}
@@ -20,11 +20,10 @@ const Main = (props: IMainProps) => {
       <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
         {/*  Site header */}
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
-        {/* content area */}
+        {/* main area */}
         <main>
           <div className="mx-auto w-full max-w-9xl px-4 py-8 sm:px-6 lg:px-8">
-            <div className="py-5 text-xl">{props.children}</div>
+            <div>{props.children}</div>
           </div>
         </main>
       </div>

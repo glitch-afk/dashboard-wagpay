@@ -1,13 +1,7 @@
-import { useRouter } from 'next/router';
-
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-import Pages from './pages';
-
-const Index = () => {
-  const location = useRouter();
-  const { pathname } = location;
+const Pages = () => {
   return (
     <Main
       meta={
@@ -17,10 +11,9 @@ const Index = () => {
         />
       }
     >
-      {pathname === '/' && <h1>Wagpay dashboard 2.0</h1>}
-      {pathname.includes('pages') && <Pages />}
+      Pages 2.0
     </Main>
   );
 };
 
-export default Index;
+export default Pages;
