@@ -3,7 +3,6 @@ import React from 'react';
 import LineChart from '@/charts/LineChart';
 // eslint-disable-next-line import/order
 import { hexToRGB, tailwindConfig } from '@/utils/Utils';
-// Import utilities
 
 function ChartCard() {
   const chartData = {
@@ -62,12 +61,12 @@ function ChartCard() {
   };
 
   return (
-    <div className="col-span-full flex flex-col rounded-sm border border-gray-200 bg-white shadow-lg xl:col-span-8">
-      <header className="flex items-center border-b border-gray-100 px-5 py-4">
-        <h2 className="font-semibold text-gray-800">Analytics</h2>
+    <div className="col-span-full flex flex-col rounded-sm border border-gray-200 bg-white font-inter shadow-lg xl:col-span-8">
+      <header className="flex items-center border-b border-gray-100 bg-gray-900 px-5 py-4">
+        <h2 className="font-semibold text-white">Analytics</h2>
       </header>
 
-      <div className="grow">
+      <div className="grow font-inter">
         <LineChart data={chartData} width={800} height={350} />
       </div>
     </div>

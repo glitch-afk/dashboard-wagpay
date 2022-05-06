@@ -91,7 +91,14 @@ function LineChart({ data, width, height }: any) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <canvas ref={canvas} width={width} height={height}></canvas>;
+  return (
+    <canvas
+      ref={canvas}
+      width={width}
+      height={height}
+      className="font-inter"
+    ></canvas>
+  );
 }
 
 export default LineChart;
