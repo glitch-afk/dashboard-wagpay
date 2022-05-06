@@ -1,13 +1,8 @@
-import { useRouter } from 'next/router';
-
+import ChartCard from '@/components/chart.component';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-import Pages from './pages';
-
 const Index = () => {
-  const location = useRouter();
-  const { pathname } = location;
   return (
     <Main
       meta={
@@ -17,8 +12,9 @@ const Index = () => {
         />
       }
     >
-      {pathname === '/' && <h1>Wagpay dashboard 2.0</h1>}
-      {pathname.includes('pages') && <Pages />}
+      <div className="grid grid-cols-12 gap-6">
+        <ChartCard />
+      </div>
     </Main>
   );
 };
