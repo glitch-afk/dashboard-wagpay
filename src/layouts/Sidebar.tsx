@@ -126,13 +126,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           d="M20 18.8V6.63995L13.6514 2.81498L13.6514 2.81497C13.0511 2.4533 12.751 2.27247 12.4304 2.20183C12.1469 2.13935 11.8531 2.13935 11.5696 2.20183C11.249 2.27247 10.9489 2.45331 10.3486 2.81498L4 6.63998V18.8C4 19.9201 4 20.4801 4.21799 20.908C4.40973 21.2843 4.71569 21.5903 5.09202 21.782C5.51984 22 6.0799 22 7.2 22H16.8C17.9201 22 18.4802 22 18.908 21.782C19.2843 21.5903 19.5903 21.2843 19.782 20.908C20 20.4801 20 19.9201 20 18.8Z"
@@ -179,17 +173,10 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
-                          opacity="0.25"
                           d="M3 4C3 2.34315 4.34315 1 6 1H15.7574C16.553 1 17.3161 1.31607 17.8787 1.87868L20.1213 4.12132C20.6839 4.68393 21 5.44699 21 6.24264V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V4Z"
-                          className={`fill-current text-gray-400 ${
+                          className={`fill-current text-gray-400/50 ${
                             pathname.includes('pages') && '!text-indigo-500'
                           }`}
                         />
@@ -243,13 +230,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           d="M3.19403 11.1644C3.09244 10.5549 3.56248 10 4.18042 10H19.8195C20.4374 10 20.9075 10.5549 20.8059 11.1644L19.4178 19.4932C19.1767 20.9398 17.9251 22 16.4586 22H7.54134C6.07483 22 4.82326 20.9398 4.58216 19.4932L3.19403 11.1644Z"
@@ -314,13 +295,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           d="M3 14C3 13.4477 3.44772 13 4 13H20C20.5523 13 21 13.4477 21 14V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V14Z"
@@ -378,13 +353,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           fillRule="evenodd"
@@ -434,13 +403,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           d="M1 6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6V18C23 19.6569 21.6569 21 20 21H4C2.34315 21 1 19.6569 1 18V6Z"
@@ -512,13 +475,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           fillRule="evenodd"
@@ -561,13 +518,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }: ISidebarProps) {
                     }`}
                   >
                     <div className="flex items-center">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                      <svg className="h-6 w-6 shrink-0" viewBox="0 0 24 24">
                         <path
                           opacity="0.25"
                           d="M3 4C3 2.34315 4.34315 1 6 1H15.7574C16.553 1 17.3161 1.31607 17.8787 1.87868L20.1213 4.12132C20.6839 4.68393 21 5.44699 21 6.24264V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V4Z"
