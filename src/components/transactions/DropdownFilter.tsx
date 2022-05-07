@@ -38,7 +38,7 @@ function DropdownFilter({ align }: any) {
     <div className="relative inline-flex">
       <button
         ref={trigger}
-        className="btn border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600"
+        className="btn rounded border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600"
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
@@ -69,35 +69,33 @@ function DropdownFilter({ align }: any) {
           <ul className="mb-4">
             <li className="py-1 px-3">
               <label className="flex items-center">
+                <input type="checkbox" className="form-checkbox" />
                 <span className="ml-2 text-sm font-medium">Recent</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
+                <input type="checkbox" className="form-checkbox" />
                 <span className="ml-2 text-sm font-medium">Yesterday</span>
               </label>
             </li>
             <li className="py-1 px-3">
               <label className="flex items-center">
-                <span className="ml-2 text-sm font-medium">Last Week</span>
-              </label>
-            </li>
-            <li className="py-1 px-3">
-              <label className="flex items-center">
-                <span className="ml-2 text-sm font-medium">Last Month</span>
+                <input type="checkbox" className="form-checkbox" />
+                <span className="ml-2 text-sm font-medium">Last week</span>
               </label>
             </li>
           </ul>
           <div className="border-t border-gray-200 bg-gray-50 py-2 px-3">
             <ul className="flex items-center justify-between">
               <li>
-                <button className="btn-xs border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600">
+                <button className="btn-sm btn rounded border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600">
                   Clear
                 </button>
               </li>
               <li>
                 <button
-                  className="btn-xs bg-indigo-500 text-white hover:bg-indigo-600"
+                  className="btn-sm btn rounded bg-indigo-500 text-white hover:bg-indigo-600"
                   onClick={() => setDropdownOpen(false)}
                   onBlur={() => setDropdownOpen(false)}
                 >

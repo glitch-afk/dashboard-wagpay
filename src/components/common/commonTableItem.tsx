@@ -23,15 +23,10 @@ function CommonTableItem(props: any) {
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center font-medium text-light-blue-500">
-          {props.status}
+          {props.chain}
         </div>
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
-        {props.etherscan && (
-          <div className="flex items-center justify-center font-medium text-green-500">
-            view on etherscan
-          </div>
-        )}
         <div className="flex items-center justify-center font-medium text-green-500">
           <DetailsModal
             sender="v3n0m.eth"

@@ -26,7 +26,7 @@ const DetailsModal = ({
     <div className="m-1.5">
       {/* Start */}
       <button
-        className="btn bg-indigo-500 text-white hover:bg-indigo-600"
+        className="btn rounded-full bg-indigo-500 text-white hover:bg-indigo-600"
         aria-controls="integration-modal"
         onClick={(e) => {
           e.stopPropagation();
@@ -82,7 +82,7 @@ const DetailsModal = ({
         <div className="mb-5 w-full text-sm">
           <ul className="mb-5 w-full space-y-3">
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 text-gray-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -103,7 +103,7 @@ const DetailsModal = ({
               <div>{customerName}</div>
             </li>
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 text-gray-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -126,7 +126,7 @@ const DetailsModal = ({
               <div>{productName}</div>
             </li>
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 text-gray-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

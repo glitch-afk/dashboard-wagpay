@@ -56,9 +56,19 @@ const tableData: ItableData[] = [
 
 function CustomerTable() {
   return (
-    <div className="col-span-full rounded-sm border border-gray-200 bg-white shadow-lg">
-      <CommonTable tableHeaders={tableHeaders} tableData={tableData} />
-    </div>
+    <>
+      <div className="col-span-full">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-semibold">Recent Transactions</h2>
+          <h3 className="cursor-pointer text-sm hover:text-indigo-500 hover:underline">
+            View all transactions
+          </h3>
+        </div>
+      </div>
+      <div className="col-span-full rounded-sm border border-gray-200 bg-white shadow-lg">
+        <CommonTable tableHeaders={tableHeaders} tableData={tableData} />
+      </div>
+    </>
   );
 }
 

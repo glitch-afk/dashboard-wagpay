@@ -42,6 +42,78 @@ const tableData: ItableData[] = [
     chain: 'Ethereum',
     status: 'view on etherscan',
   },
+  {
+    id: 2,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 3,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 4,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 5,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 6,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 7,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 8,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 9,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+  {
+    id: 10,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
 ];
 
 function Transactions() {
@@ -54,9 +126,9 @@ function Transactions() {
         />
       }
     >
-      <div className="mx-auto w-full max-w-9xl px-4 py-8 font-inter sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-9xl px-4 font-inter sm:px-6 lg:px-8">
         {/* Page header */}
-        <div className="mb-8 sm:flex sm:items-center sm:justify-between">
+        <div className="mb-8 flex items-center justify-between">
           {/* Left: Title */}
           <div className="mb-4 sm:mb-0">
             <h1 className="text-2xl font-bold text-gray-800 md:text-3xl">
@@ -69,8 +141,25 @@ function Transactions() {
             {/* Filter button */}
             <FilterButton align="right" />
             {/* All button */}
-            <button className="btn bg-indigo-500 text-white hover:bg-indigo-600">
-              <span className="hidden xs:block">All</span>
+            <button className="btn rounded bg-indigo-500 text-gray-50 hover:bg-indigo-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4h6v8h-6z"></path>
+                <path d="M4 16h6v4h-6z"></path>
+                <path d="M14 12h6v8h-6z"></path>
+                <path d="M14 4h6v4h-6z"></path>
+              </svg>
+              <span className="ml-1 hidden xs:block">All</span>
             </button>
           </div>
         </div>

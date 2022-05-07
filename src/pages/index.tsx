@@ -14,7 +14,7 @@ const Index = () => {
         />
       }
     >
-      <div className="grid grid-cols-12 gap-6 font-inter">
+      <div className="grid w-full grid-cols-12 gap-6 font-inter">
         <ChartCard />
         <UserCard />
         <CustomerTable />
