@@ -3,12 +3,12 @@ import React from 'react';
 function CustomerTable() {
   return (
     <div className="col-span-full rounded-sm border border-gray-200 bg-white shadow-lg">
-      <header className="flex justify-between border-b border-gray-100 bg-gray-900 px-5 py-4">
+      <div className="flex justify-between border-b border-gray-100 bg-gray-900 px-5 py-4">
         <h2 className="font-semibold text-white">Recent Transactions</h2>
         <p className="cursor-pointer text-white hover:text-indigo-500 hover:underline">
           View all transactions
         </p>
-      </header>
+      </div>
       <div className="p-3">
         {/* Table */}
         <div className="overflow-x-auto">
@@ -51,10 +51,11 @@ function CustomerTable() {
                 </td>
                 <td className="whitespace-nowrap p-2">
                   <div className="text-center">
-                    <div className="font-medium text-gray-800">v3n0m</div>
+                    <div className="text-sm font-medium text-gray-800">
+                      v3n0m
+                    </div>
                   </div>
                 </td>
-
                 <td className="whitespace-nowrap p-2">
                   <div className="text-center">
                     <div>100 USDC</div>
