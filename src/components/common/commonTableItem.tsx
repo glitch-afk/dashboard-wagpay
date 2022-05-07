@@ -1,32 +1,37 @@
 import React from 'react';
 
-import DetailsModal from './detailsModal';
+import DetailsModal from '../transactions/detailsModal';
 
-function TransactionTableItem(props: any) {
+function CommonTableItem(props: any) {
   return (
     <tr>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="flex items-center justify-center">
           <div className="font-medium text-gray-800">{props.id}</div>
         </div>
       </td>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center">{props.name}</div>
       </td>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center font-medium text-green-500">
           {props.amount}
         </div>
       </td>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center">{props.paidIn}</div>
       </td>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center font-medium text-light-blue-500">
           {props.status}
         </div>
       </td>
-      <td className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+      <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
+        {props.etherscan && (
+          <div className="flex items-center justify-center font-medium text-green-500">
+            view on etherscan
+          </div>
+        )}
         <div className="flex items-center justify-center font-medium text-green-500">
           <DetailsModal
             sender="v3n0m.eth"
@@ -43,4 +48,4 @@ function TransactionTableItem(props: any) {
   );
 }
 
-export default TransactionTableItem;
+export default CommonTableItem;

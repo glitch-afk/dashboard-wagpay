@@ -1,12 +1,50 @@
 import React from 'react';
 
+import CommonTable from '@/components/common/commonTable';
 import PaginationClassic from '@/components/common/PaginationClassic';
 import FilterButton from '@/components/transactions/DropdownFilter';
-import TransactionTable from '@/components/transactions/transactionTable';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-function Customers() {
+interface ItableData {
+  id: number;
+  name: string;
+  amount: number;
+  paidIn: string;
+  chain: string;
+  status: string;
+}
+
+interface ItableHeaders {
+  id: string;
+  name: string;
+  amount: string;
+  paidIn: string;
+  chain: string;
+  transactionStatus: string;
+}
+
+const tableHeaders: ItableHeaders = {
+  id: 'Sr no.',
+  name: 'Customer Name',
+  amount: 'Amount',
+  paidIn: 'Paid In',
+  chain: 'Chain',
+  transactionStatus: 'Transaction Status',
+};
+
+const tableData: ItableData[] = [
+  {
+    id: 1,
+    name: 'venom',
+    amount: 100,
+    paidIn: 'Matic',
+    chain: 'Ethereum',
+    status: 'view on etherscan',
+  },
+];
+
+function Transactions() {
   return (
     <Main
       meta={
@@ -38,7 +76,9 @@ function Customers() {
         </div>
 
         {/* Table */}
-        <TransactionTable />
+        <div className="col-span-full rounded-sm border border-gray-200 bg-white shadow-lg">
+          <CommonTable tableHeaders={tableHeaders} tableData={tableData} />
+        </div>
 
         {/* Pagination */}
         <div className="mt-8">
@@ -49,4 +89,4 @@ function Customers() {
   );
 }
 
-export default Customers;
+export default Transactions;
