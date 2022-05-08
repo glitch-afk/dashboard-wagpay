@@ -7,112 +7,38 @@ import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
 interface ItableData {
-  id: number;
-  name: string;
-  amount: number;
-  paidIn: string;
-  chain: string;
-  status: string;
+  col1: number;
+  col2: string;
+  col3: number;
+  col4: string;
+  col5: string;
 }
 
 interface ItableHeaders {
-  id: string;
-  name: string;
-  amount: string;
-  paidIn: string;
-  chain: string;
-  transactionStatus: string;
+  col1: string;
+  col2: string;
+  col3: string;
+  col4: string;
+  col5: string;
+  col6: string;
 }
 
 const tableHeaders: ItableHeaders = {
-  id: 'Sr no.',
-  name: 'Customer Name',
-  amount: 'Amount',
-  paidIn: 'Paid In',
-  chain: 'Chain',
-  transactionStatus: 'Transaction Status',
+  col1: 'Sr no.',
+  col2: 'Customer Name',
+  col3: 'Amount',
+  col4: 'Paid In',
+  col5: 'Transaction Status',
+  col6: 'Details',
 };
 
 const tableData: ItableData[] = [
   {
-    id: 1,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 2,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 3,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 4,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 5,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 6,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 7,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 8,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 9,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
-  },
-  {
-    id: 10,
-    name: 'venom',
-    amount: 100,
-    paidIn: 'Matic',
-    chain: 'Ethereum',
-    status: 'view on etherscan',
+    col1: 1,
+    col2: 'venom',
+    col3: 100,
+    col4: 'Matic',
+    col5: 'etherscan',
   },
 ];
 

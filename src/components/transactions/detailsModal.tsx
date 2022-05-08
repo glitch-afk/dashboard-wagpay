@@ -9,7 +9,7 @@ interface IDetailsModal {
   customerName: string;
   productName: string;
   amount: number;
-  paidIn: string;
+  paidIn?: string;
 }
 
 const DetailsModal = ({

@@ -20,32 +20,32 @@ function CommonTable({ tableData, tableHeaders }: any) {
             <tr>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.id}
+                  {tableHeaders.col1}
                 </div>
               </th>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.name}
+                  {tableHeaders.col2}
                 </div>
               </th>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.amount}
+                  {tableHeaders.col3}
                 </div>
               </th>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.paidIn}
+                  {tableHeaders.col4}
                 </div>
               </th>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.chain}
+                  {tableHeaders.col5}
                 </div>
               </th>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
-                  {tableHeaders.transactionStatus}
+                  {tableHeaders.col6}
                 </div>
               </th>
             </tr>
@@ -55,13 +55,12 @@ function CommonTable({ tableData, tableHeaders }: any) {
             {list.map((transaction: any) => {
               return (
                 <CommonTableItem
-                  key={transaction.id}
-                  id={transaction.id}
-                  name={transaction.name}
-                  amount={transaction.amount}
-                  paidIn={transaction.paidIn}
-                  chain={transaction.chain}
-                  status={transaction.status}
+                  key={transaction.col1}
+                  col1={transaction.col1}
+                  col2={transaction.col2}
+                  col3={transaction.col3}
+                  col4={transaction.col4}
+                  col5={transaction.col5}
                 />
               );
             })}
