@@ -62,8 +62,8 @@ function ChartCard() {
 
   return (
     <div className="col-span-full flex flex-col rounded-sm border border-gray-200 bg-white font-inter shadow-lg xl:col-span-8">
-      <header className="flex items-center border-b border-gray-100 bg-gray-900 px-5 py-4">
-        <h2 className="font-semibold text-white">Analytics</h2>
+      <header className="flex items-center border-b border-gray-100 px-5 py-4">
+        <h2 className="font-semibold text-gray-900">Analytics</h2>
       </header>
 
       <div className="grow font-inter">
