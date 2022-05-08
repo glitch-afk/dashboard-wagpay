@@ -58,7 +58,7 @@ const Products = () => {
           {/* Left: Title */}
           <div className="mb-4 sm:mb-0">
             <h1 className="text-2xl font-bold text-gray-800 md:text-3xl">
-              Transactions
+              Products
             </h1>
           </div>
 
@@ -81,7 +81,7 @@ const Products = () => {
                 <line x1="12" y1="5" x2="12" y2="19"></line>
                 <line x1="5" y1="12" x2="19" y2="12"></line>
               </svg>
-              <span className="ml-1 hidden xs:block">Create a plan</span>
+              <span className="ml-1 hidden xs:block">Add Product</span>
             </button>
           </div>
         </div>

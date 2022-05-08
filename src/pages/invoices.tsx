@@ -50,7 +50,7 @@ const Invoices = () => {
         />
       }
     >
-      <div className="mx-auto w-full max-w-9xl px-4 py-8 font-inter sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-9xl px-4 font-inter sm:px-6 lg:px-8">
         {/* Page header */}
         <div className="mb-8 flex items-center justify-between">
           {/* Left: Title */}
