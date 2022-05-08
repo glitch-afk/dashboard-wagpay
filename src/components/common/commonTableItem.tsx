@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 import DetailsModal from '../transactions/detailsModal';
@@ -10,6 +11,19 @@ function CommonTableItem(props: any) {
           <div className="font-medium text-gray-800">{props.col1}</div>
         </div>
       </td>
+      {props.productImage && (
+        <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
+          <div className="flex items-center justify-center">
+            <Image
+              src={props.productImage}
+              className="font-medium text-gray-800"
+              width={96}
+              height={96}
+              alt="product_image"
+            />
+          </div>
+        </td>
+      )}
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center">{props.col2}</div>
       </td>

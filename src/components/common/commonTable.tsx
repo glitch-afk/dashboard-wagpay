@@ -23,6 +23,13 @@ function CommonTable({ tableData, tableHeaders }: any) {
                   {tableHeaders.col1}
                 </div>
               </th>
+              {tableHeaders.productImage && (
+                <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
+                  <div className="text-center font-semibold">
+                    {tableHeaders.productImage}
+                  </div>
+                </th>
+              )}
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">
                   {tableHeaders.col2}
@@ -61,6 +68,7 @@ function CommonTable({ tableData, tableHeaders }: any) {
                   col3={transaction.col3}
                   col4={transaction.col4}
                   col5={transaction.col5}
+                  productImage={transaction.productImage}
                 />
               );
             })}
