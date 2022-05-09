@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 
-import Header from '@/components/header';
+import Header from '@/components/common/header';
 import Sidebar from '@/layouts/Sidebar';
 
 type IMainProps = {

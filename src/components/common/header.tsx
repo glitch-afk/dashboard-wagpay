@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DropdownNotifications from './header/DropdownNotifications';
-import UserMenu from './header/UserMenu';
+import DropdownNotifications from '../header/DropdownNotifications';
+import UserMenu from '../header/UserMenu';
 
 function Header({ sidebarOpen, setSidebarOpen }: any) {
   return (
