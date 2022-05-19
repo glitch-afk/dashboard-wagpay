@@ -12,7 +12,7 @@ const Main = (props: IMainProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-gray-50 font-inter">
+    <div className="flex h-screen overflow-hidden bg-wagpay-dark font-inter">
       {props.meta}
       {/* Sidebar */}
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />

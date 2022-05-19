@@ -11,17 +11,14 @@ function PaginationClassic() {
         <ul className="flex justify-center">
           <li className="ml-3 first:ml-0">
             <a
-              className="btn cursor-not-allowed border-gray-200 bg-white text-gray-300"
+              className="btn cursor-not-allowed rounded-lg border-gray-200 bg-wagpay-primary text-gray-600"
               href="#0"
             >
               Previous
             </a>
           </li>
           <li className="ml-3 first:ml-0">
-            <a
-              className=" btn border-gray-200 bg-white text-indigo-500 hover:border-gray-300"
-              href="#0"
-            >
+            <a className="btn rounded-lg bg-indigo-500 text-white" href="#0">
               Next
             </a>
           </li>

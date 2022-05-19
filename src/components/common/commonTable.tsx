@@ -13,10 +13,10 @@ function CommonTable({ tableData, tableHeaders }: any) {
   return (
     <div>
       {/* Table */}
-      <div className="overflow-x-auto">
-        <table className="w-full table-auto">
+      <div className="overflow-x-auto rounded-lg">
+        <table className="w-full table-auto bg-wagpay-primary">
           {/* Table header */}
-          <thead className="w-full border-y border-gray-200 bg-gray-50 font-inter text-xs font-semibold uppercase text-gray-500">
+          <thead className="w-full font-inter text-xs font-semibold uppercase text-white">
             <tr>
               <th className="whitespace-nowrap px-2 py-3 first:pl-5 last:pr-5">
                 <div className="text-center font-semibold">

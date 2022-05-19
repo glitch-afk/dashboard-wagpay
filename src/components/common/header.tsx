@@ -5,7 +5,7 @@ import UserMenu from '../header/UserMenu';
 
 function Header({ sidebarOpen, setSidebarOpen }: any) {
   return (
-    <header className="sticky top-0 z-30 border-b border-gray-200 bg-white">
+    <header className="sticky top-0 z-30 bg-wagpay-primary">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="-mb-px flex h-16 items-center justify-between">
           {/* Header: Left side */}

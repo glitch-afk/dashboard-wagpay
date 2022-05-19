@@ -38,7 +38,7 @@ function DropdownFilter({ align }: any) {
     <div className="relative inline-flex">
       <button
         ref={trigger}
-        className="btn rounded border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600"
+        className="btn rounded-lg bg-wagpay-primary text-gray-500 hover:border-gray-600 hover:text-gray-600"
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
@@ -52,7 +52,7 @@ function DropdownFilter({ align }: any) {
       <Transition
         show={dropdownOpen}
         tag="div"
-        className={`origin-top-right z-10 absolute top-full min-w-56 bg-white border border-gray-200 pt-1.5 rounded shadow-lg overflow-hidden mt-1 ${
+        className={`origin-top-right z-10 absolute top-full min-w-56 bg-wagpay-primary text-white pt-1.5 rounded shadow-lg overflow-hidden mt-1 ${
           align === 'right' ? 'right-0' : 'left-0'
         }`}
         enter="transition ease-out duration-200 transform"
@@ -70,7 +70,9 @@ function DropdownFilter({ align }: any) {
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="ml-2 text-sm font-medium">Recent</span>
+                <span className="ml-2 text-sm font-medium text-white">
+                  Recent
+                </span>
               </label>
             </li>
             <li className="py-1 px-3">
@@ -86,10 +88,10 @@ function DropdownFilter({ align }: any) {
               </label>
             </li>
           </ul>
-          <div className="border-t border-gray-200 bg-gray-50 py-2 px-3">
+          <div className="border-t border-gray-600 bg-wagpay-primary py-2 px-3">
             <ul className="flex items-center justify-between">
               <li>
-                <button className="btn-sm btn rounded border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:text-gray-600">
+                <button className="btn-sm btn rounded border-gray-200 bg-wagpay-dark text-white hover:border-gray-300 hover:text-gray-600">
                   Clear
                 </button>
               </li>

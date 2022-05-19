@@ -55,13 +55,13 @@ function ModalAction({ children, id, modalOpen, setModalOpen }: any) {
       >
         <div
           ref={modalContent}
-          className="max-h-full w-full max-w-lg overflow-auto rounded bg-white shadow-lg"
+          className="max-h-full w-full max-w-lg overflow-auto rounded bg-wagpay-primary shadow-lg"
         >
           <div className="p-6">
             <div className="relative">
               {/* Close button */}
               <button
-                className="absolute top-0 right-0 text-gray-400 hover:text-gray-500"
+                className="absolute top-0 right-0 text-white hover:text-gray-50"
                 onClick={(e) => {
                   e.stopPropagation();
                   setModalOpen(false);

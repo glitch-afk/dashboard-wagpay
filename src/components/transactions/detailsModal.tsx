@@ -45,18 +45,18 @@ const DetailsModal = ({
           {/* Transaction */}
           <div className="mb-4 inline-flex items-center justify-center space-x-3">
             {/* from address */}
-            <div className="cursor-pointer">{sender}</div>
+            <div className="cursor-pointer text-white">{sender}</div>
             {/* Arrows */}
             <svg
-              className="h-4 w-4 fill-current text-gray-400"
+              className="h-4 w-4 fill-current text-gray-100"
               viewBox="0 0 16 16"
             >
               <path d="M5 3V0L0 4l5 4V5h8a1 1 0 000-2H5zM11 11H3a1 1 0 000 2h8v3l5-4-5-4v3z" />
             </svg>
             {/* to address */}
-            <div className="cursor-pointer">{receiver}</div>
+            <div className="cursor-pointer text-white">{receiver}</div>
           </div>
-          <div className="flex items-center justify-center space-x-2 text-center text-lg font-semibold text-gray-800">
+          <div className="flex items-center justify-center space-x-2 text-center text-lg font-semibold text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -82,7 +82,7 @@ const DetailsModal = ({
         <div className="mb-5 w-full text-sm">
           <ul className="mb-5 w-full space-y-3">
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2 text-gray-900">
+              <div className="flex items-center space-x-2 text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -103,7 +103,7 @@ const DetailsModal = ({
               <div>{customerName}</div>
             </li>
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2 text-gray-900">
+              <div className="flex items-center space-x-2 text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -126,7 +126,7 @@ const DetailsModal = ({
               <div>{productName}</div>
             </li>
             <li className="flex w-full items-center justify-between">
-              <div className="flex items-center space-x-2 text-gray-900">
+              <div className="flex items-center space-x-2 text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

@@ -96,7 +96,7 @@ function LineChart({ data, width, height }: any) {
       ref={canvas}
       width={width}
       height={height}
-      className="font-inter"
+      className="bg-wagpay-primary font-inter"
     ></canvas>
   );
 }

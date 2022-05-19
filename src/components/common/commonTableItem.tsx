@@ -8,7 +8,7 @@ function CommonTableItem(props: any) {
     <tr>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="flex items-center justify-center">
-          <div className="font-medium text-gray-800">{props.col1}</div>
+          <div className="font-medium text-white">{props.col1}</div>
         </div>
       </td>
       {props.productImage && (
@@ -16,7 +16,7 @@ function CommonTableItem(props: any) {
           <div className="flex items-center justify-center">
             <Image
               src={props.productImage}
-              className="font-medium text-gray-800"
+              className="font-medium text-white"
               width={96}
               height={96}
               alt="product_image"
@@ -25,7 +25,7 @@ function CommonTableItem(props: any) {
         </td>
       )}
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
-        <div className="text-center">{props.col2}</div>
+        <div className="text-center text-white">{props.col2}</div>
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center font-medium text-green-500">
@@ -33,7 +33,7 @@ function CommonTableItem(props: any) {
         </div>
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
-        <div className="text-center">{props.col4}</div>
+        <div className="text-center text-white">{props.col4}</div>
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
         <div className="text-center font-medium text-light-blue-500">
@@ -41,7 +41,7 @@ function CommonTableItem(props: any) {
         </div>
       </td>
       <td className="whitespace-nowrap p-2 first:pl-5 last:pr-5">
-        <div className="flex items-center justify-center font-medium text-green-500">
+        <div className="flex items-center justify-center bg-wagpay-primary font-medium text-green-500">
           <DetailsModal
             sender="v3n0m.eth"
             receiver="v3n0m.sol"

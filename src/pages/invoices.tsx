@@ -54,7 +54,7 @@ const Invoices = () => {
       <div className="mb-8 flex items-center justify-between">
         {/* Left: Title */}
         <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl font-bold text-gray-800 md:text-3xl">
+          <h1 className="text-2xl font-bold text-white md:text-3xl">
             Invoices
           </h1>
         </div>
@@ -62,7 +62,7 @@ const Invoices = () => {
         {/* Right: Actions */}
         <div className="grid grid-flow-col justify-start gap-2 sm:auto-cols-max sm:justify-end">
           {/* create plan button */}
-          <button className="btn rounded-sm bg-indigo-500 text-white hover:bg-indigo-600">
+          <button className="btn rounded-lg bg-indigo-500 text-white hover:bg-indigo-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -84,7 +84,7 @@ const Invoices = () => {
       </div>
 
       {/* Table */}
-      <div className="col-span-full rounded-sm border border-gray-200 bg-white shadow-lg">
+      <div className="col-span-full rounded-lg shadow-lg">
         <CommonTable tableHeaders={tableHeaders} tableData={tableData} />
       </div>
     </Main>
